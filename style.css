@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(./img/background.png);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .footer {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    background-size: cover;
+}
+
+.main {
+    flex: 3;
+    padding: 0;
+    display: flex;
+}
+
+.menu {
+    border: 2px solid rgba(165, 43, 184, 0.679);
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+nav ul li {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    flex: 10;
+    flex-direction: column;
+}
+
+nav ul li a {
+    color: black; /* Màu mặc định */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+nav ul li a:hover {
+    color: greenyellow; 
+}
+button:hover {
+    color: greenyellow;
+    transform: translateY(2px);
+}
+button:active {
+    color: greenyellow;
+    transform: translateY(2px);
+}
+.room {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white;
+    font-weight: bold;
+    flex: 1 1 238px;
+}
+
+.row {
+	display: flex;
+    flex-direction: row;
+    align-items: center; /* Căn giữa chiều dọc */
+    justify-content: center; /* Căn giữa chiều ngang */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.title {
+    color: black;
+    font-weight: bolder;
+}
+
+.header img.logo {
+    width: 220px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.canhan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.canhan img.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+h1 {
+    align-items: center; /* Căn giữa chiều dọc */
+    justify-content: center; /* Căn giữa chiều ngang */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+#living_room > .room > .slot {
+    flex: 1 1 300px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.604));
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#kitchen > .room > .slot {
+    flex: 1 1 300px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 153, 0, 0.286));
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#bed_room > .room > .slot {
+    flex: 1 1 300px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(128, 0, 128, 0.216));
+    color: black;
+    border: solid 2px;
+    border-color: white;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* Style for the slider container */
+.appliance input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style for the custom slider */
+  .appliance label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Styling for the slider track */
+  .appliance label span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  /* Styling for the slider thumb */
+  .appliance label span:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* Styling for the slider thumb when checked */
+  .appliance input:checked + label span {
+    background-color: #2196F3;
+  }
+  
+  /* Styling for the slider thumb position when checked */
+  .appliance input:checked + label span:before {
+    transform: translateX(26px);
+  }
+  
+/* CSS để điều chỉnh kích thước hình ảnh trong slot */
+/* CSS để điều chỉnh kích thước hình ảnh trong slot */
+.slot img {
+    max-width: 60%; /* Hình ảnh sẽ không vượt quá chiều rộng của slot */
+    max-height: 60%; /* Hình ảnh sẽ không vượt quá chiều cao của slot */
+    height: auto; /* Duy trì tỷ lệ khung hình khi điều chỉnh kích thước */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    width: 65px;
+}
+
+.slot {
+    border-radius: 20%;
+}
+
+.on {
+    background-color: green;
+}
+
+.off {
+    background-color: red;
+}
+
+.small-icon {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    bottom: -30px;
+}

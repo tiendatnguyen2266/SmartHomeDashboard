@@ -1,0 +1,45 @@
+{
+  "Bed_room": {
+    "CAMPN": "OFF",
+    "DEN": "ON",
+    "Gas": "410 ppm",
+    "Humid": "42 %",
+    "LAMP_BRIGHTNESS": "5",
+    "Light": "200 Lux",
+    "MAYLANH": "ON",
+    "MAYLANH_TEM": "23",
+    "QUAT": 1,
+    "TVPN": "OFF",
+    "TV_Channel": "3",
+    "Temp": "34 °C"
+  },
+  "Kitchen": {
+    "BD": "ON",
+    "BEPDIEN_LUA": "LARGE",
+    "CAMPB": "ON",
+    "DEN": "OFF",
+    "Gas": "450 ppm",
+    "Humid": "45 %",
+    "Light": "400 Lux",
+    "MAYLANH": "OFF",
+    "MAYLANH_TEM": "27",
+    "NC": "ON",
+    "QUAT": 3,
+    "Temp": "36 °C"
+  },
+  "Living_room": {
+    "CAMPK": "OFF",
+    "DEN": "ON",
+    "Gas": "420 ppm",
+    "Humid": "43 %",
+    "Light": "500 Lux",
+    "MAYLANH": "ON",
+    "MAYLANH_TEM": "18",
+    "QUAT": 3,
+    "TVPK": "OFF",
+    "TV_Channel": "1",
+    "Temp": "35 °C",
+    "WIFI": "ON"
+  },
+  "Threshold_Alert": 0
+}
